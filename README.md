@@ -42,10 +42,10 @@ Demonstrate, end to end, how an exposed ADB service on a mobile device can be di
 
 ## Attack Walkthrough
 
-1. **Target setup** — Genymotion Android VM, network-accessible ADB (TCP 5555), simulating a device left in a debuggable state.
-2. **Recon** — `nmap -p 5555 <target-ip>` from Kali confirms the port is open.
-3. **Exploitation** — `adb connect <target-ip>:5555` establishes a connection with no authentication required.
-4. **Impact demonstration** — `adb shell screenrecord` remotely records the device screen; `adb pull` retrieves the recording to the attacker machine as evidence of full device control.
+1. **Target setup** - Genymotion Android VM, network-accessible ADB (TCP 5555), simulating a device left in a debuggable state.
+2. **Recon** - `nmap -p 5555 <target-ip>` from Kali confirms the port is open.
+3. **Exploitation** - `adb connect <target-ip>:5555` establishes a connection with no authentication required.
+4. **Impact demonstration** - `adb shell screenrecord` remotely records the device screen; `adb pull` retrieves the recording to the attacker machine as evidence of full device control.
 
 ## Detection Walkthrough
 
@@ -81,13 +81,13 @@ A few real-world findings worth calling out from building this lab:
 
 ## Repo Contents
 
-- `nmap-scan.png` — port discovery evidence
-- `adb-connect.png` — successful connection
-- `demo.mp4` — remote screen recording (attack impact)
-- `suricata-alert.png` — raw Suricata detection
-- `wazuh-alert.png` — final SIEM alert
-- `local.rules` — Suricata detection rule
-- `local_rules.xml` — Wazuh custom detection rule
+- `nmap-scan.png` - port discovery evidence
+- `adb-connect.png` - successful connection
+- `demo.mp4` - remote screen recording (attack impact)
+- `suricata-alert.png` - raw Suricata detection
+- `wazuh-alert.png`- final SIEM alert
+- `local.rules` - Suricata detection rule
+- `local_rules.xml` - Wazuh custom detection rule
 
 ---
 **Steven Doyley**
