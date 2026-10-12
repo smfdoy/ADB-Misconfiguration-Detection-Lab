@@ -38,7 +38,7 @@ Demonstrate, end to end, how an exposed ADB service on a mobile device can be di
 | nmap | Port discovery / recon |
 | ADB (Android Debug Bridge) | Exploitation of the exposed debug interface |
 | Suricata | Network intrusion detection, custom rule |
-| Wazuh | SIEM — log aggregation, custom detection rule, alerting |
+| Wazuh | SIEM - log aggregation, custom detection rule, alerting |
 
 ## Attack Walkthrough
 
