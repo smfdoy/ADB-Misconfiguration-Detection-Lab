@@ -2,7 +2,7 @@
 
 Simulating and detecting a real-world Android Debug Bridge (ADB) network exposure, using a Genymotion virtual device as the target, Kali Linux as the attacker, and Suricata + Wazuh as the detection stack.
 
-This lab is a follow-up to my [SOC Detection Lab](#) (Wazuh + Kali + Ubuntu endpoint), extending the same detection-engineering approach to a mobile attack surface.
+This lab is a follow-up to my [SOC Detection Lab](https://github.com/smfdoy/SOC-Detection-Lab) (Wazuh + Kali + Ubuntu endpoint), extending the same detection-engineering approach to a mobile attack surface.
 
 ## Objective
 
