@@ -44,7 +44,8 @@ Demonstrate, end to end, how an exposed ADB service on a mobile device can be di
 
 1. **Target setup** — Genymotion Android VM (`192.168.28.101`), network-accessible ADB (TCP 5555), simulating a device left in a debuggable state.
 2. **Recon** — `nmap -p 5555 192.168.28.101` from Kali confirms the port is open.
-   ![nmap scan](nmap-scan.png)
+   ![nmap scan](<img width="1010" height="302" alt="image" src="https://github.com/user-attachments/assets/43beb4f4-d3fa-44b5-b3aa-711f359fa238" />
+)
 3. **Exploitation** — `adb connect 192.168.28.101:5555` establishes a connection with no authentication required.
    ![adb connect](adb-connect.png)
 4. **Impact demonstration** — `adb shell screenrecord` remotely records the device screen; `adb pull` retrieves the recording to the attacker machine as evidence of full device control. See `demo.mp4`.
